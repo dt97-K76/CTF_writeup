@@ -15,7 +15,8 @@ Enter flag: *redacted*
 Here's your flag:  a81c0750d48f0750
 ```
 Author: cartoonraccoon
-File: [worbler](https://github.com/datvn09/CTF_writeup/edit/main/REV/%2520%2520%2520%20All%20Worbled%20Up/worbler) [Python Bytecode/opcodes]
+
+File: [worbler](https://github.com/datvn09/CTF_writeup/blob/main/REV/%20%20%20%20All%20Worbled%20Up/worbler) [Python Bytecode/opcodes]
 
 ## Solution 
 Một dạng bài về Opcodes Python, tôi sẽ cố gắng học và tìm hiểu về nó để có thể đọc hiểu vào một ngày gần nhất còn bây giờ với sự giúp đỡ nhiệt tình từ người bạn yêu quý của mình - [Chat GPT](https://chat.openai.com/), anh ấy đã giúp tôi convert Opcodes Python sang mã Python bình thường [worbler.py](https://github.com/datvn09/CTF_writeup/edit/main/REV/%2520%2520%2520%20All%20Worbled%20Up/worbler.py). Một thứ dường như thật dễ dàng!
@@ -23,8 +24,8 @@ Một dạng bài về Opcodes Python, tôi sẽ cố gắng học và tìm hi�
 Từ dòng lệnh sau:
 >re_pattern = re.compile('^uoftctf\\{([bdrw013]){9}\\}$')
 
-ta biết được chuỗi kí tự cần tìm có format uoftctf{chuoi_9_ki_tu} với chuoi_9_ki_tu này được lấy từ chuỗi kí tự sau "bdrw013". Vì vậy ý tưởng để giải quyết thử thách này là tạo nên một tập hợp gồm tất cả các chuỗi gồm 9 kí tự được tạo thành từ "bdrw013" và thực hiện brute force để tìm ra output thỏa đề bài đã cho.
-
+ta biết được chuỗi kí tự cần tìm có format uoftctf{chuoi_9_ki_tu} với chuoi_9_ki_tu này được lấy từ các kí tự sau "bdrw013". Vì vậy ý tưởng để giải quyết thử thách này là tạo nên một tập hợp gồm tất cả các chuỗi có 9 kí tự được tạo bởi "bdrw013" và thực hiện brute force để tìm ra output thỏa đề bài đã cho.
+[solution.py](https://github.com/datvn09/CTF_writeup/blob/main/REV/%20%20%20%20All%20Worbled%20Up/solution.py)
 ```
 import re
 from itertools import product
