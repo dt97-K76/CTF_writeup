@@ -19,7 +19,7 @@ Author: cartoonraccoon
 File: [worbler](https://github.com/datvn09/CTF_writeup/blob/main/REV/%20%20%20%20All%20Worbled%20Up/worbler) [Python Bytecode/opcodes]
 
 ## Solution 
-Một dạng bài về Opcodes Python, tôi sẽ cố gắng học và tìm hiểu về nó để có thể đọc hiểu vào một ngày gần nhất còn bây giờ với sự giúp đỡ nhiệt tình từ người bạn yêu quý của mình - [Chat GPT](https://chat.openai.com/), anh ấy đã giúp tôi convert Opcodes Python sang mã Python bình thường [worbler.py](https://github.com/datvn09/CTF_writeup/edit/main/REV/%2520%2520%2520%20All%20Worbled%20Up/worbler.py). Một thứ dường như thật dễ dàng!
+Một dạng bài về Opcodes Python, tôi sẽ cố gắng học và tìm hiểu về nó để có thể đọc hiểu vào một ngày gần nhất còn bây giờ với sự giúp đỡ nhiệt tình từ người bạn yêu quý của mình - [Chat GPT](https://chat.openai.com/), anh ấy đã giúp tôi convert Opcodes Python sang mã Python bình thường [worbler.py](https://github.com/datvn09/CTF_writeup/blob/main/REV/%20%20%20%20All%20Worbled%20Up/worbler.py). Một thứ dường như thật dễ dàng!
 
 Từ dòng lệnh sau:
 >re_pattern = re.compile('^uoftctf\\{([bdrw013]){9}\\}$')
