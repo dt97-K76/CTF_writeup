@@ -16,8 +16,10 @@ File: [BankChallenge.jar](https://github.com/datvn09/CTF_writeup/edit/main/REV/%
 Use [jd-GUI](https://java-decompiler.github.io/) để decompile các file trong tệp `.jar`.
 Kết quả: [Main.java](https://github.com/datvn09/CTF_writeup/edit/main/REV/%20%20%20%20CEO's%20Lost%20Password/Main.java) + [a.java](https://github.com/datvn09/CTF_writeup/edit/main/REV/%20%20%20%20CEO's%20Lost%20Password/a.java)
 
-Bắt đầy tìm hiểu các câu lệnh tôi chú ý đến đoạn mã sau:
+Bắt đầu tìm hiểu các câu lệnh tôi chú ý đến đoạn mã sau:
+
 ![image](https://github.com/datvn09/CTF_writeup/assets/157048397/349affc1-72e2-4071-b9e5-a874a11c52ab)
+
 Sau khi tìm hiêu tôi biết được `Map trong Java được sử dụng để lưu trữ các ánh xạ key-value` có thể đây chính là dữ liệu quan trọng đã được lưu trữ.
 Thêm vào đó:
 ```
@@ -27,13 +29,17 @@ String var2 = var0.nextLine(); //user
 String var3 = var0.nextLine(); //pasword
                     if (((a) var1.get(var2)).a(var3)) {...}
 ```
-Như vậy phần nào đã đoán dược password sau khi được nhập vào sẽ được mã hóa bởi hàm a(), sau đó được so sánh với dữ liệu được lưu trữ với `map` trước đó.
+Như vậy phần nào đã đoán được password sau khi được nhập vào sẽ được mã hóa bởi hàm a(), sau đó được so sánh với dữ liệu được lưu trữ với `map` trước đó.
 Để đơn giản tôi sẽ debug để tìm `key-value` và xem chuỗi đã được chương trình mã hóa như thế nào.
 
 ![image](https://github.com/datvn09/CTF_writeup/assets/157048397/26ef7759-ff50-4463-8b99-638d99fce10f)
+
 ![image](https://github.com/datvn09/CTF_writeup/assets/157048397/f42779da-0314-44ca-9194-d692d32d854e)
+
 Với var3 là password nhập ngẫu nhiên từ bàn phím.
-Password admin đúng đã encrypt: `瑥⽦䩧㡡倰噕卖䝃捉㉌永敲畴楺癲湊`
+
+Password admin đúng đã bị encrypt: `瑥⽦䩧㡡倰噕卖䝃捉㉌永敲畴楺癲湊`
+
 Hàm encrypt password trông như sau: 
 ```
     static String a(String var0) {
