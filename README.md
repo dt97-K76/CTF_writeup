@@ -5,7 +5,7 @@ Writeup các challenge giải uoftctf, các giải khác đang trong quá trình
 
 Đây là bài báo cáo đầu tiên, có thể chưa được hoàn thiện, còn nhiều thiếu sót, mong được mọi người góp ý để hoàn thiện. Cảm ơn mọi người đã đọc!
 
-Một số task đã và đang hoàn thành: 
+Một số task đã hoàn thành: 
 
 https://hackmd.io/@datvn/task1_KCSC_9287
 
