@@ -12,6 +12,7 @@ Author: cartoonraccoon
 
 ![pass2](https://github.com/datvn09/CTF_writeup/assets/157048397/4fb2538b-454e-4e81-8026-4f362d739ec8)
 
+### Code
 ```
 from Crypto.Util.number import isPrime
 
