@@ -8,10 +8,13 @@ Author: drec
 
 ## Solution
 
+Trong phần mô tả ở trên có từ "dump" in nghiêng, vì vậy tôi nghĩ mình nên đổ thứ gì đó. Nhưng trước hết, hãy dịch ngược tệp ELF đã cho, từ mã được dịch ngược, chúng ta có thể thấy rằng chương trình đang thực hiện một số thao tác trên mảng BYTE trên địa chỉ 0x406000.
+
 ![image](https://github.com/datvn09/CTF_writeup/assets/157048397/32363034-714b-4422-8cf8-b57797e001d8)
 
 ![arrayAddr](https://github.com/datvn09/CTF_writeup/assets/157048397/c8a12d27-69e9-48c4-a5af-f48e9db2eabe)
 
+Lưu ý: Vì không có PIE trên tệp ELF nên offset địa chỉ là 0x400000 và không được ngẫu nhiên hóa.
 
 ```
 gdb-gef
