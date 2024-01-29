@@ -12,6 +12,7 @@ Author: drec
 
 ![arrayAddr](https://github.com/datvn09/CTF_writeup/assets/157048397/c8a12d27-69e9-48c4-a5af-f48e9db2eabe)
 
+
 ```
 gdb-gef
 
@@ -45,7 +46,7 @@ You're just here for the flag, are you?
 ![readAddr](https://github.com/datvn09/CTF_writeup/assets/157048397/c1b99423-779b-4609-a9cc-a21b6d25d46f)
 
 
-source code solution
+### Code
 
 ```
 import gdb
