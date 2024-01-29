@@ -8,10 +8,9 @@ Author: cartoonraccoon
 
 ## Solution
 
-![image](https://hackmd.io/_uploads/BJs9f8r56.png)
+![pass1](https://github.com/datvn09/CTF_writeup/assets/157048397/82b73296-6d83-4822-abb6-b2017c867979)
 
-![image](https://hackmd.io/_uploads/B18jf8S5a.png)
-
+![pass2](https://github.com/datvn09/CTF_writeup/assets/157048397/4fb2538b-454e-4e81-8026-4f362d739ec8)
 
 ```
 from Crypto.Util.number import isPrime
