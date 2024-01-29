@@ -8,9 +8,10 @@ Author: cartoonraccoon
 
 ## Solution
 
-![pass1](https://hackmd.io/_uploads/BkpXf8Hcp.png)
+![image](https://hackmd.io/_uploads/BJs9f8r56.png)
 
-![pass2](https://hackmd.io/_uploads/rkrEfLr5T.png)
+
+![image](https://hackmd.io/_uploads/B18jf8S5a.png)
 
 
 ```
