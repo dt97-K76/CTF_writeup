@@ -8,7 +8,11 @@ Author: cartoonraccoon
 
 ## Solution
 
+Dịch ngược tệp thực thi đã cho. Trong chức năng chính, bạn sẽ tìm thấy phương pháp lọc đầu vào đầu tiên.
+
 ![pass1](https://github.com/datvn09/CTF_writeup/assets/157048397/82b73296-6d83-4822-abb6-b2017c867979)
+
+Từ dòng đó, chúng ta biết rằng đầu vào của người dùng phải lớn hơn hoặc bằng 19 và nhỏ hơn 100 (trong ASCII). Mỗi ký tự trong đầu vào cũng không được là bội số của 3 [a == 3 * (a / 3)] và 4 [a & 3 != 0]
 
 ![pass2](https://github.com/datvn09/CTF_writeup/assets/157048397/4fb2538b-454e-4e81-8026-4f362d739ec8)
 
