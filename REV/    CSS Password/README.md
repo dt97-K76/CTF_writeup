@@ -10,7 +10,11 @@ Author: notnotpuns
 
 ## Solution
 
+Đó là một cuộc gọi độc đáo, kiểm tra đầu vào của người dùng bằng css. Từ tệp html đã cho, chúng ta có thể tìm thấy logic của trình kiểm tra khóa.
+
 ![FlagChecker](https://github.com/datvn09/CTF_writeup/assets/157048397/1bf0cffd-73c1-405e-87d7-868dd8f4c526)
+
+Nếu biến đổi: TranslateX(-100%); với điều kiện .latch__set:active, điều đó có nghĩa là trên .byte:nth-child(n) và .latch:nth-child(n) phải được đặt thành "1" và ngược lại. Vì vậy, tôi sử dụng biểu thức chính quy trên python để giải quyết vấn đề này.
 
 ### Code 
 
