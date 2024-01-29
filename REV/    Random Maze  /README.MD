@@ -1,15 +1,12 @@
 ## Challenge Description 
-Hello there brave programmer!
 
-I am the CEO of TotallySecureBank™, I have a lot of money in my bank account but I forgot my password! My username is admin and I have $100000 in my account.
+a little maze for you! just don't get lost! :3 remember, if you end up somewhere that doesn't look right, it probably isn't!
 
-If you could recover my account you can use my password as a flag (flag would be uoftctf{MyPasswordHere})
+free hint: the entire flag is lower-alphanumeric ASCII.
 
-You can try the bank software by running java -jar BankChallenge.jar and use the admin user user with the password
+Author: cartoonraccoon
 
-Author: Ido 
-
-File: [BankChallenge.jar](https://github.com/datvn09/CTF_writeup/edit/main/REV/%20%20%20%20CEO's%20Lost%20Password/BankChallenge.jar)
+File: [Random Maze](https://github.com/datvn09/CTF_writeup/edit/main/REV/%20%20%20%20CEO's%20Lost%20Password/BankChallenge.jar)
 
 ## Solution
 
