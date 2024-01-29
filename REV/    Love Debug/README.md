@@ -15,14 +15,7 @@ Author: drec
 ```
 checksec love-letter-for-you
 
-[*] '/mnt/c/Users/acer/Desktop/love-letter-for-you'
-    Arch:     amd64-64-little
-    RELRO:    No RELRO
-    Stack:    No canary found
-    NX:       NX disabled
-    PIE:      No PIE (0x400000)
-    RWX:      Has RWX segments
-```
+
 
 ```
 gdb-gef
@@ -55,6 +48,8 @@ You're just here for the flag, are you?
 ```
 
 ![readAddr](https://github.com/datvn09/CTF_writeup/assets/157048397/c1b99423-779b-4609-a9cc-a21b6d25d46f)
+
+source code solution
 
 ```
 import gdb
