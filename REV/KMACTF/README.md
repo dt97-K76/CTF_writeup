@@ -27,7 +27,8 @@ print(flag)
 #KMACTF{rc4_neV3r_d1E}
 ```
 
-![Uploading image.png…]()
+![image](https://github.com/datvn09/CTF_writeup/assets/157048397/9919bf36-f823-4a30-8303-67e17d6c86c2)
+
 
 
 
