@@ -100,7 +100,10 @@ for i in range(34):
 
 Điều đầu tiên cần làm là check xem nó được biên dịch bởi version python nào. Chúng ta có thể dễ dàng tìm được tại [check](https://github.com/python/cpython/blob/5b2f21faf388d8de5b388996cfd4f03430085764/Lib/importlib/_bootstrap_external.py#L467C21-L467C25)
 
+
 ![image](https://github.com/datvn09/CTF_writeup/assets/157048397/91f2be63-eea5-4876-bded-7ce1ce7ef531)
+
+
 
 ![image](https://github.com/datvn09/CTF_writeup/assets/157048397/b7a8dcbb-84ee-45da-81f0-5e9071fbc837)
 
