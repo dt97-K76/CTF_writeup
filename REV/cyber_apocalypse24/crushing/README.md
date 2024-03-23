@@ -24,14 +24,14 @@ Sau khi rename lại các biến ta được đoạn code dễ hiểu hơn:
 
 Giá trị trả về của hàm là `result` tức giá trị biến i truyền vào nó là thứ tự của `char_input`
 
-Giá trị của biến i truyền vào này sẽ được 
+Phân tích hàm `erialize_and_output`:
+
+![image](https://github.com/datvn09/CTF_writeup/assets/157048397/526c4381-1132-4d25-a2b4-d2f1986c6e76)
 
 
+index chạy từ 1->254 gán v2 = map[index] ghi vào output chiều dài của v2 (tức số lần xuất hiện của index) và các giá trị của mảng v2 ( tức vị trí xuất hiện của index).
 
-
-
-
-
+solution:
 
 ```
 char_map = [[] for _ in range(255)]
@@ -53,3 +53,10 @@ for i in range(len(char_map)):
 print("".join(text))
 
 ```
+
+kết qủa:
+
+![image](https://github.com/datvn09/CTF_writeup/assets/157048397/b6649aff-da38-419c-a568-7fd2e8ae8bfa)
+
+flag: `HTB{4_v3ry_b4d_compr3ss1on_sch3m3}`
+
