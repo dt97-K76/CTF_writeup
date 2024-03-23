@@ -1,10 +1,17 @@
 # Challenge RE
 
+Đây là những challenge đơn giản nên tôi không viết wu chi tiết phần này. Ở đây chỉ có hai bài thực sự cần viết script để solution. Tham khảo bên dưới.
+
 ## packer
+
 ## FactCheck
+
 ## WinAntiDbg0x100
+
 ## WinAntiDbg0x200
+
 ## WinAntiDbg0x300
+
 ## Classic Crackme 0x100
 
 ```
