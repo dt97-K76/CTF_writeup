@@ -1,6 +1,6 @@
 ## input_validator
 
-Decompile file [input_validator.class](https://github.com/datvn09/CTF_writeup/edit/main/REV/PEARL/input_validator.class)
+Decompile file [input_validator.class](https://github.com/datvn09/CTF_writeup/blob/main/REV/PEARL/input_validator.class)
 bằng `Bytecode-Viewer` để xem mã nguồn java.
 Ta được:
 
