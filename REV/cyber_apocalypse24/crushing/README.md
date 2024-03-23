@@ -23,6 +23,7 @@ Sau khi rename lại các biến ta được đoạn code dễ hiểu hơn:
 ![image](https://github.com/datvn09/CTF_writeup/assets/157048397/f008759e-1454-4895-b4f2-391c2c7b4b6c)
 
 Giá trị trả về của hàm là `result` tức giá trị biến i truyền vào nó là thứ tự của `char_input`
+Giá trị này được lưu lần lượt vào map[char_input].
 
 Phân tích hàm `erialize_and_output`:
 
