@@ -109,6 +109,8 @@ for i in range(34):
 
 
 
+Vì vậy đề đọc được mã bytecode cần chạy script sau với python version 3.13.
+
 ```
 import marshal, dis
 
@@ -116,6 +118,8 @@ with open("byteme.pyc", "rb") as file:
     file.seek(16)
     print(dis.dis(marshal.load(file)))
 ```
+
+Ta được đoạn bytecode khá dài với nhiều hàm xử lí. Sau đó tôi dịch nó sang ngông ngữ python thông thường để hiểu và giải quyết nó.
 
 ```
   0           0 RESUME                   0
@@ -992,6 +996,8 @@ Disassembly of <code object breakme at 0x55b6afe64940, file "byteme.py", line 14
 None
 ```
 
+Đoạn mã sau khi được dịch trông dễ hơn rất nhiều.
+
 ```
 
 from hashlib import md5
@@ -1136,6 +1142,8 @@ if __name__ == "__main__":
 
 #### Solution
 
+Với hàm crackme() nó là một đoạn code thực hiện hash md5 chuỗi đầu vào và so sánh với chuỗi hashed_key cho sẵn. Với chuỗi đầu vào gồm 12 kí tự theo mã nguồn và format cờ là `pearl{` nên việc brute force 6 kí tự còn lại là việc hoàn toàn khả thi. Script sau giải quyết vấn đề.
+
 ```
 import hashlib
 import itertools
@@ -1150,8 +1158,11 @@ for p in char:
     if hashed_key == '9ce86143889d80b01586f8a819d20f0c':
         print(key, hashed_key)
         exit()
+
+#pearl{e4sy_p
 ```
 
+Tiếp theo hàm solveme() là một list ràng buộc các kí tự đầu vào, dễ dàng xử lí với z3.
 
 ```
 from z3 import *
@@ -1182,9 +1193,11 @@ if s.check() == sat:
         print(f"{chr(model[answer[i]].as_long())}", end = "")
 else:
     print("No solution")
+
+#34sy_byt3c
 ```
 
-
+Cuối cùng là đoạn code biến đổi dữ liệu cơ bản. 
 ```
 best = [117, 84, 87, 108, 59, 85, 66, 71, 71, 30, 16]
 
@@ -1194,4 +1207,8 @@ for i in range(len(best)):
     key = (best[i] ^ plier)
     plier = key
     print(chr(key), end='')
+
+#0d3_d1s4sm}
 ```
+
+flag: `pearl{e4sy_p34sy_byt3c0d3_d1s4sm}`
