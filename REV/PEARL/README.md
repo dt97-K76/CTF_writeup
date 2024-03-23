@@ -109,7 +109,7 @@ for i in range(34):
 
 
 
-Vì vậy đề đọc được mã bytecode cần chạy script sau với python version 3.13.
+Vì vậy để đọc được mã bytecode cần chạy script sau với python version 3.13.
 
 ```
 import marshal, dis
